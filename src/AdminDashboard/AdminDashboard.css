@@ -1,0 +1,128 @@
+.admindash{
+  width: 100vw;
+  height: 90vh; 
+  display: flex;
+  align-items: center;
+  flex-direction: column; 
+  gap: 50px;
+  position: relative;
+}
+.admindash1{
+    width: 50%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+}
+.admindash1 img{
+    width: 50px;
+    height: 50px; 
+    cursor: pointer; 
+    z-index: 999;
+}
+.admindash11{
+    font-size: 25px;
+    font-family: "Bebas Neue", sans-serif;  
+}
+.admindash2{
+    width: 80%;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 70px; 
+}
+.admindash21{
+    width: 13vw;
+    height: 20vh;
+    background-color: green;
+    border-radius: 8px;
+    position: relative; 
+    cursor: pointer;
+    z-index: 999; 
+}
+.admindash21 img{
+    width: 100%;
+    height: 100%; 
+    -webkit-filter: blur(1px) brightness(0.5);
+    -moz-filter: blur(1px) brightness(0.5);
+    -ms-filter: blur(1px) brightness(0.5);
+    -o-filter: blur(1px) brightness(0.5);
+    filter: blur(1px) brightness(0.5); 
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgb(15,15,15,0.26); 
+}
+.admindash211{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+.admindash2111{
+    color: white;
+    font-size: 25px;  
+}
+.admindash3{
+    width: 50%;
+    height: 50vh;
+    position: absolute;
+    top: 0%;  
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.admindash31{
+    width: 30%;
+    height: 100%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgb(15,15,15,0.26); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px; 
+    visibility: hidden;
+}
+.admindash311{
+    width: 80%;
+    height: 8%;
+    background-color: white;
+    box-shadow: 0 0 5px rgb(15,15,15,0.26); 
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    cursor: pointer;
+}
+.admindash311 img{
+   width: 20px;
+   height: 20px; 
+}
+.admindash3111{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+.admindash31111{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    font-size: 12px;
+}
+.admindash31112{
+    width: 25px;
+    height: 25px;
+    background-color: burlywood;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: white; 
+    visibility: hidden;
+}

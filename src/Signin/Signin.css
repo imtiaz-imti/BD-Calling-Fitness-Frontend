@@ -1,0 +1,80 @@
+.signin{
+  width: 100vw;
+  height: 90vh;
+  background-color: rgb(242, 240, 240);
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+.signin1{
+    width: 20%;
+    height: 50%;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0 0 5px rgb(15,15,15,0.26); 
+}
+.signin11{
+    width: 80%;
+    height: 10%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: gray;
+}
+.signin12{
+    width: 80%;
+    height: 40%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.signin13{
+    width: 80%;
+    height: 10%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+.signin14{
+    width: 80%;
+    height: 20%; 
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.signin121{
+    width: 80%;
+    height: 25%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    background-color: white;
+    box-shadow: 0 0 5px rgb(15,15,15,0.26);
+}
+.email{
+    width: 90%;
+    height: 90%; 
+    outline: none;
+    border: none;
+    font-size: 15px;
+    background-color: none;
+    color: gray;
+}
+.signin141{
+    width: 100px;
+    height: 40px;
+    background-color: burlywood;
+    color: rgb(81, 79, 79); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}

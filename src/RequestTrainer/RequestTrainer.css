@@ -1,0 +1,47 @@
+.rt{
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.rtd{
+   width: 70%;
+   height: 80%;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   gap: 20px; 
+}
+.rtd1{
+    width: 40%;
+    height: 10%;
+    background-color: white;
+    box-shadow: 0 0 5px rgb(15,15,15,0.26);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center; 
+}
+.rtd11{
+    width: 90%;
+    height: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.rtd111{
+    font-size: 20px;
+    font-family: "Bebas Neue", sans-serif;
+    color: burlywood; 
+}
+.rtd112{
+    font-size: 20px;
+    font-family: "Bebas Neue", sans-serif;
+    color: green; 
+    cursor: pointer;
+}
+.rtd11 img{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}

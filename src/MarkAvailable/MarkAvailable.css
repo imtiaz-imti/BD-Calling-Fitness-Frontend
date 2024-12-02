@@ -1,0 +1,62 @@
+.ma{
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center; 
+}
+.ma1{
+    width: 80%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.ma11{
+    width: 40%;
+    height: 10%;
+    background-color: white; 
+    box-shadow: 0 0 5px rgb(15,15,15,0.26);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 30px;
+    color: green;
+    cursor: pointer;
+}
+.ma12{
+    width: 40%;
+    height: 10%;
+    background-color: white; 
+    box-shadow: 0 0 5px rgb(15,15,15,0.26);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 30px;
+    color: black;
+}
+.ma13{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+}
+.ma131{
+    width: 30%;
+    height: 8vh;
+    background-color: white; 
+    box-shadow: 0 0 5px rgb(15,15,15,0.26);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 30px;
+    color: burlywood; 
+}

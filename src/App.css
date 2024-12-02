@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Protest+Strike&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Protest Strike", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body{
+  overflow-x: hidden;
+}
+.booked{
+  font-family: "Bebas Neue", sans-serif;
+  color: orange;
+  font-size: 20px;
+}
+.ma131 img{
+  width: 30px;
+  height: 30px;
+  gap: 30px;
+}
+/* font-family: "Bebas Neue", sans-serif; */

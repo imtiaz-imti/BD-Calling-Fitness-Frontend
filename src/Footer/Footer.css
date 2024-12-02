@@ -1,0 +1,15 @@
+.footer{
+  width: 100vw;
+  height: 10vh;
+  background-color: black; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px; 
+}
+.footer1{
+    color: white;  
+}
+.footer2{
+    color: burlywood;  
+}
