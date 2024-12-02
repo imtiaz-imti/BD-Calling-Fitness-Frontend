@@ -4,7 +4,7 @@ import axios from 'axios'
 const AllTrainerDet = ({props}) => {
     const deleteTrainer = async ()=>{
       try {
-        await axios.post('http://localhost:4000/api/v1/delete/trainer',{id : String(props._id)})
+        await axios.post('https://bd-calling-fitness.onrender.com/api/v1/delete/trainer',{id : String(props._id)})
         alert('Trainer delete successfully')
       } catch (error) {}
     }

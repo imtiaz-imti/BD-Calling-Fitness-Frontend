@@ -32,12 +32,12 @@ const AdminDashboard = () => {
    }
    const rt = async ()=>{
       try {
-         await axios.put('http://localhost:4000/api/v1/delete/notification/count/trainer',{id : localStorage.getItem('id')})
+         await axios.put('https://bd-calling-fitness.onrender.com/api/v1/delete/notification/count/trainer',{id : localStorage.getItem('id')})
       } catch (error) {}
    }
    const ra = async ()=>{
       try {
-         await axios.put('http://localhost:4000/api/v1/delete/notification/count/admin',{id : localStorage.getItem('id')})
+         await axios.put('https://bd-calling-fitness.onrender.com/api/v1/delete/notification/count/admin',{id : localStorage.getItem('id')})
       } catch (error) {}
    }
    const {userDetails} = useSelector((state) => state.userDetails)

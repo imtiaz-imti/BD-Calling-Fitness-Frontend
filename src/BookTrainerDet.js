@@ -13,7 +13,7 @@ const BookTrainerDet = ({props}) => {
              name: props.userLogin ? props.userLogin.name : ''
         }
         try {
-            await axios.post('http://localhost:4000/api/v1/book/trainer',body)
+            await axios.post('https://bd-calling-fitness.onrender.com/api/v1/book/trainer',body)
             alert('booked successfully')
         } catch (error) {console.log(error)}  
     }

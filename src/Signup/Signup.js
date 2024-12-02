@@ -15,7 +15,7 @@ const Signup = () => {
       "password":document.getElementById('password').value,
     }
     try {
-      const userID = await axios.post('http://localhost:4000/api/v1/new',body)
+      const userID = await axios.post('https://bd-calling-fitness.onrender.com/api/v1/new',body)
       localStorage.setItem('id',userID.data.userNew)
       dispatch(getUserDetails(userID.data.userNew))
       alert('user created successfully')

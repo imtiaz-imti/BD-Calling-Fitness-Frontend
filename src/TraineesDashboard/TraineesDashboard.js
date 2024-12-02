@@ -24,11 +24,11 @@ const TraineesDashboard = () => {
          navigate("/", { replace: true })
       }
       const rt = async ()=>{
-         await axios.post('http://localhost:4000/api/v1/request/trainer',{id : localStorage.getItem('id')})
+         await axios.post('https://bd-calling-fitness.onrender.com/api/v1/request/trainer',{id : localStorage.getItem('id')})
          alert('Request send to admin')
       }
       const ra = async ()=>{
-         await axios.post('http://localhost:4000/api/v1/request/admin',{id : localStorage.getItem('id')})
+         await axios.post('https://bd-calling-fitness.onrender.com/api/v1/request/admin',{id : localStorage.getItem('id')})
          alert('Request send to admin')
       }
    return (

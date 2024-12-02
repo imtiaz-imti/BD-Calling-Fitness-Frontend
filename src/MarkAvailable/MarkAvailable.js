@@ -30,7 +30,7 @@ const MarkAvailable = () => {
         "id": localStorage.getItem('id'),
       }
       try {
-        await axios.post('http://localhost:4000/api/v1/trainer/mark/available',body)
+        await axios.post('https://bd-calling-fitness.onrender.com/api/v1/trainer/mark/available',body)
         alert('mark successfully')
       } catch (error) {console.log(error)}
   }  

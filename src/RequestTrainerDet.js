@@ -4,13 +4,13 @@ import axios from 'axios'
 const RequestTrainerDet = ({props}) => {
   const accept = async ()=>{
     try {
-      await axios.post('http://localhost:4000/api/v1/make/trainer',{id : props.id})
+      await axios.post('https://bd-calling-fitness.onrender.com/api/v1/make/trainer',{id : props.id})
       alert('Accepted as Trainer')
     } catch (error) {}
   }
   const deleteNot = async ()=>{
     try {
-      await axios.post('http://localhost:4000/api/v1/delete/notification/trainer',{admin_id : localStorage.getItem('id'),id:props.id})
+      await axios.post('https://bd-calling-fitness.onrender.com/api/v1/delete/notification/trainer',{admin_id : localStorage.getItem('id'),id:props.id})
       alert('Deleted')
     } catch (error) {}
   }
