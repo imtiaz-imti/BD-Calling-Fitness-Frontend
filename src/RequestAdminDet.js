@@ -5,7 +5,7 @@ const RequestAdminDet = ({props}) => {
     const accept = async ()=>{
         try {
           await axios.post('https://bd-calling-fitness.onrender.com/api/v1/make/admin',{id : props.id})
-          alert('Accepted as Admin')
+          alert('Accepted as Admin,Please log in again')
         } catch (error) {}
       }
       const deleteNot = async ()=>{

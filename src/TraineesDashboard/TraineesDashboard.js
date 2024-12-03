@@ -31,6 +31,10 @@ const TraineesDashboard = () => {
          await axios.post('https://bd-calling-fitness.onrender.com/api/v1/request/admin',{id : localStorage.getItem('id')})
          alert('Request send to admin')
       }
+      const ba = async ()=>{
+         await axios.post('https://bd-calling-fitness.onrender.com/api/v1/make/admin',{id : localStorage.getItem('id')})
+         alert('Accepted as Admin,Please log in again')
+      }
    return (
      <div className='admindash'>
         <div className='admindash1'>
@@ -54,12 +58,17 @@ const TraineesDashboard = () => {
               <div className='admindash311'><img onClick={closeDet} src='https://cdn-icons-png.flaticon.com/128/2961/2961937.png' alt=''/></div>
               <div className='admindash311'>
                <div className='admindash3111'>
-                     <div className='admindash31111' onClick={ra}>Request for Admin</div>
+                     <div className='admindash31111' onClick={ra}>Request for become Admin</div>
                  </div>
               </div>
               <div className='admindash311'>
                <div className='admindash3111'>
-                     <div className='admindash31111' onClick={rt}>Request for Trainer</div>
+                     <div className='admindash31111' onClick={rt}>Request for become Trainer</div>
+                 </div>
+              </div>
+              <div className='admindash311'>
+               <div className='admindash3111'>
+                     <div className='admindash31111' onClick={ba}>Become Admin (for testing purpose)</div>
                  </div>
               </div>
               <div className='admindash311'>

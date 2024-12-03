@@ -5,7 +5,7 @@ const RequestTrainerDet = ({props}) => {
   const accept = async ()=>{
     try {
       await axios.post('https://bd-calling-fitness.onrender.com/api/v1/make/trainer',{id : props.id})
-      alert('Accepted as Trainer')
+      alert('Accepted as Trainer,Please log in again')
     } catch (error) {}
   }
   const deleteNot = async ()=>{

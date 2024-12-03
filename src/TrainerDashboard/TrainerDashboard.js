@@ -50,7 +50,7 @@ const TrainerDashboard = () => {
               <div className='admindash311'><img onClick={closeDet} src='https://cdn-icons-png.flaticon.com/128/2961/2961937.png' alt=''/></div>
               <div className='admindash311'>
                <div className='admindash3111'>
-                     <div className='admindash31111' onClick={ra}>Request for Admin</div>
+                     <div className='admindash31111' onClick={ra}>Request for become Admin</div>
                  </div>
               </div>
               <div className='admindash311'>
