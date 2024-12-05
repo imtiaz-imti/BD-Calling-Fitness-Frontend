@@ -291,3 +291,50 @@
   color: white;
   border-radius: 2px; 
 }
+@media only screen and (min-width: 300px) and (max-width: 1300px){
+  .home2111{
+    width: 70%;
+    height: 80%;
+    font-size: 20px;
+  }
+  .home21211{
+    font-size: 25px;
+  }
+  .home213{
+    font-size: 15px;
+  }
+  .home214{
+    font-size: 15px;
+  }
+  .home215{
+    height: 8%;
+  }
+  .home2151{
+    width: 50%;
+    height: 80%;
+    font-size: 15px;
+  }
+  .home31211{
+    height: 20%;
+  }
+  .home31212{
+    height: 20%;
+  }
+  .home42{
+    font-size: 20px;
+  }
+  .home4{
+    height: 240vh;
+    justify-content: flex-start;
+  }
+  .home41{
+    width: 80%;
+    height: 140vh;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .home411{
+    width: 80%;
+    height: 50%;
+  }
+}

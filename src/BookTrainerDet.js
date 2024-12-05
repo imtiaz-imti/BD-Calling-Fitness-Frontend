@@ -14,6 +14,7 @@ const BookTrainerDet = ({props}) => {
         }
         try {
             await axios.post('https://bd-calling-fitness.onrender.com/api/v1/book/trainer',body)
+            setBook(1)
             alert('booked successfully')
         } catch (error) {console.log(error)}  
     }

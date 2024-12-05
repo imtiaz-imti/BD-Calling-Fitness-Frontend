@@ -126,3 +126,37 @@
     color: white; 
     visibility: hidden;
 }
+@media only screen and (min-width: 300px) and (max-width: 1300px){
+    .admindash1{
+      width: 90%;  
+    }
+    .admindash11{  
+      font-size: 20px;
+   }
+   .admindash1 img{
+    width: 30px;
+    height: 30px;
+  }
+  .admindash3{
+    width: 100%;
+  }
+  .admindash31{
+    width: 70%;
+  } 
+  .admindash2{
+    height: 100vh;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  .admindash21{
+    width: 80vw;
+    height: 20vh;
+  }
+  .admindash{
+    height: 240vh;
+  }
+  .admindash311{
+    height: 8vh;
+  }  
+}

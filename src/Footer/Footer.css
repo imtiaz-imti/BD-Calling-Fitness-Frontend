@@ -13,3 +13,11 @@
 .footer2{
     color: burlywood;  
 }
+@media only screen and (min-width: 300px) and (max-width: 1300px){
+  .footer1{
+    font-size: 15px;  
+}
+.footer2{
+  font-size: 15px;  
+} 
+}

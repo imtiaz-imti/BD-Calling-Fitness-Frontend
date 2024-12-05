@@ -25,8 +25,13 @@ const AvailableTrainer = () => {
          setList(data)
        }
     },[bookTrainerDetails])
+    useEffect(()=>{
+      if(list && list.length > 0 && document.getElementById('rt')){
+        document.getElementById('rt').style.height = `${100+(list.length*4)}vh`
+      }
+    },[list,document.getElementById('rt')])
     return (
-        <div className='rt'>
+        <div className='rt' id='rt'>
             <div className='rtd'>
             {list ? list.map(user => <AvailableTrainerDet key={user._id} props={user}/>) : <></>}
             </div>

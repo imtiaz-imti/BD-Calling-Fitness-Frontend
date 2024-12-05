@@ -28,8 +28,13 @@ const BookTrainer = () => {
        }
     },[bookTrainerDetails])
     const {userDetails} = useSelector((state) => state.userDetails)
+    useEffect(()=>{
+      if(list && list.length > 0 && document.getElementById('rt')){
+        document.getElementById('rt').style.height = `${100+(list.length*4)}vh`
+      }
+    },[list,document.getElementById('rt')])
     return (
-        <div className='rt'>
+        <div className='rt' id='rt'>
             <div className='rtd'>
             {list ? list.map(user => <BookTrainerDet key={user._id} props={{user,s:params.s,e:params.e,t:params.t,id:localStorage.getItem('id'),userLogin:userDetails}}/>) : <></>}
             </div>
