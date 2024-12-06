@@ -3,6 +3,7 @@ import AvailableTrainerDet from '../AvailableTrainerDet'
 import {useDispatch,useSelector} from 'react-redux'
 import {bookTrainerList} from '../ProductAction'
 import { useParams } from 'react-router'
+import NothingFound from '../NothingFound'
 
 const AvailableTrainer = () => {
     const params= useParams() 
@@ -33,7 +34,7 @@ const AvailableTrainer = () => {
     return (
         <div className='rt' id='rt'>
             <div className='rtd'>
-            {list ? list.map(user => <AvailableTrainerDet key={user._id} props={user}/>) : <></>}
+            {list && list.length > 0 ? list.map(user => <AvailableTrainerDet key={user._id} props={user}/>) : <NothingFound/>}
             </div>
         </div>
     )

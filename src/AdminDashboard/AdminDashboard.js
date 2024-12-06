@@ -26,6 +26,7 @@ const AdminDashboard = () => {
         }
    }
    const signOut = ()=>{
+      dispatch({type:'sign-out',payload:null})
       localStorage.setItem('id','')
       navigate("/")
       navigate("/", { replace: true })

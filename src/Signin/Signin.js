@@ -1,11 +1,13 @@
-import React from 'react'
+import React,{useState} from 'react'
 import './Signin.css'
 import axios from 'axios'
 import {useDispatch,useSelector} from 'react-redux'
 import {getUserDetails} from '../ProductAction'
 import { useNavigate } from 'react-router-dom'
+import Loader from '../Loader'
 
 const Signin = () => {
+  const [loader,setLoader] = useState(0)
   const dispatch = useDispatch()
   const navigate = useNavigate()
   const submit = async ()=>{
@@ -14,11 +16,13 @@ const Signin = () => {
       "password":document.getElementById('password').value,
     }
     try {
+      setLoader(1)
       const userID = await axios.post('https://bd-calling-fitness.onrender.com/api/v1/login',body)
       localStorage.setItem('id',userID.data.userNew)
       dispatch(getUserDetails(userID.data.userNew))
-      alert('user logged in successfully')
+      setLoader(0)
     } catch (error) {
+      setLoader(0)
       alert('Invalid Email or Password')
     }
   }
@@ -34,6 +38,9 @@ const Signin = () => {
   else if(userDetails && userDetails.role === 'trainees'){
     navigate("/trainees/dashboard")
     navigate("/trainees/dashboard", { replace: true })
+  }
+  if(loader){
+    return (<Loader/>)
   }
   return (
     <div className='signin'>

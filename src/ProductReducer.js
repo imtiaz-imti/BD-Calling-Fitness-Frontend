@@ -28,6 +28,9 @@ export const userDetailsReducer = createReducer(userDetailsInitialState, (builde
       .addCase('set_user', (state, action) => {
         state.userDetails = action.payload
       })
+      .addCase('sign-out', (state, action) => {
+        state.userDetails = action.payload
+      })
       .addCase('user_fail', (state, action) =>{})
 })
 export const requestTrainerListReducer = createReducer(requestTrainerListInitialState, (builder) => {

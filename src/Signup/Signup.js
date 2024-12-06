@@ -1,11 +1,13 @@
-import React from 'react'
+import React,{useState} from 'react'
 import './Signup.css'
 import axios from 'axios'
 import {useDispatch,useSelector} from 'react-redux'
 import {getUserDetails} from '../ProductAction'
 import { useNavigate } from 'react-router-dom'
+import Loader from '../Loader'
 
 const Signup = () => {
+  const [loader,setLoader] = useState(0)
   const dispatch = useDispatch()
   const navigate = useNavigate()
   const submit = async ()=>{
@@ -15,12 +17,14 @@ const Signup = () => {
       "password":document.getElementById('password').value,
     }
     try {
+      setLoader(1)
       const userID = await axios.post('https://bd-calling-fitness.onrender.com/api/v1/new',body)
       localStorage.setItem('id',userID.data.userNew)
       dispatch(getUserDetails(userID.data.userNew))
-      alert('user created successfully')
+      setLoader(0)
     } catch (error) {
-      alert('Name should have 4 characters,Password should have 8 Characters,Email can not be dublicate,Email should have proper way example@gmail.com')
+      setLoader(0)
+      alert('Name should have atleast 4 characters,Password should have atleast 8 Characters,Email can not be dublicate,Email should have proper way example@gmail.com')
     }
   }
   const {userDetails} = useSelector((state) => state.userDetails)
@@ -35,6 +39,9 @@ const Signup = () => {
   else if(userDetails && userDetails.role === 'trainees'){
     navigate("/trainees/dashboard")
     navigate("/trainees/dashboard", { replace: true })
+  }
+  if(loader){
+    return (<Loader/>)
   }
   return (
     <div className='signin'>

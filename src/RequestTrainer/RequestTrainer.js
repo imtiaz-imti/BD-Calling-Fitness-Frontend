@@ -1,8 +1,9 @@
-import React,{useEffect} from 'react'
+import React,{useState,useEffect} from 'react'
 import './RequestTrainer.css'
 import RequestTrainerDet from '../RequestTrainerDet'
 import {useDispatch,useSelector} from 'react-redux'
 import {requestTrainerList} from '../ProductAction'
+import NothingFound from '../NothingFound'
 
 const RequestTrainer = () => {
   const dispatch = useDispatch()
@@ -18,7 +19,7 @@ const RequestTrainer = () => {
   return (
     <div className='rt' id='rt'>
         <div className='rtd'>
-           {requestTrainerDetails ? requestTrainerDetails.map(user => <RequestTrainerDet key={user._id} props={user}/>) : <></>}
+           {requestTrainerDetails && requestTrainerDetails.length > 0  ? requestTrainerDetails.map(user => <RequestTrainerDet key={user._id} props={user}/>) : <NothingFound/>}
         </div>
     </div>
   )

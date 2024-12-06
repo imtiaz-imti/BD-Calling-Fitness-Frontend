@@ -4,6 +4,7 @@ import {useDispatch,useSelector} from 'react-redux'
 import {bookTrainerList} from '../ProductAction'
 import { useParams } from 'react-router'
 import {getUserDetails} from '../ProductAction'
+import NothingFound from '../NothingFound'
 
 const BookTrainer = () => {
     const params= useParams() 
@@ -36,7 +37,7 @@ const BookTrainer = () => {
     return (
         <div className='rt' id='rt'>
             <div className='rtd'>
-            {list ? list.map(user => <BookTrainerDet key={user._id} props={{user,s:params.s,e:params.e,t:params.t,id:localStorage.getItem('id'),userLogin:userDetails}}/>) : <></>}
+            {list && list.length > 0 ? list.map(user => <BookTrainerDet key={user._id} props={{user,s:params.s,e:params.e,t:params.t,id:localStorage.getItem('id'),userLogin:userDetails}}/>) : <NothingFound/>}
             </div>
         </div>
     )

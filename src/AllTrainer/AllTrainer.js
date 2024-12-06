@@ -2,6 +2,7 @@ import React,{useEffect} from 'react'
 import AllTrainerDet from '../AllTrainerDet'
 import {useDispatch,useSelector} from 'react-redux'
 import {allTrainerList} from '../ProductAction'
+import NothingFound from '../NothingFound'
 
 const AllTrainer = () => {
     const dispatch = useDispatch()
@@ -17,7 +18,7 @@ const AllTrainer = () => {
     return (
         <div className='rt' id='rt'>
             <div className='rtd'>
-               {allTrainerDetails ? allTrainerDetails.map(user => <AllTrainerDet key={user._id} props={user}/>) : <></>}
+               {allTrainerDetails && allTrainerDetails.length > 0 ? allTrainerDetails.map(user => <AllTrainerDet key={user._id} props={user}/>) : <NothingFound/>}
             </div>
         </div>
     )

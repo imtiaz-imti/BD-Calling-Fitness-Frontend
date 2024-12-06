@@ -3,8 +3,10 @@ import Schedule from '../Schedule/Schedule'
 import { Link } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
+import { useDispatch } from 'react-redux'
 
 const TrainerDashboard = () => {
+   const dispatch = useDispatch()
    const navigate = useNavigate()
     const openDet = ()=>{
         if(document.getElementById('admindash31')){
@@ -19,6 +21,7 @@ const TrainerDashboard = () => {
          }
       }
       const signOut = ()=>{
+         dispatch({type:'sign-out',payload:null})
          localStorage.setItem('id','')
          navigate("/")
          navigate("/", { replace: true })
